@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 Route::pattern('student_no','s[0-9]{10}');
 
-Route::group(['preflx'=>'student'],function(){
+Route::group(['prefix'=>'student'],function(){
 
     Route::get('{student_no}',['as'=>'student','uses'=>'StudentController@getStudentData'
     ]);
