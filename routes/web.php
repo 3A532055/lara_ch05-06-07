@@ -28,3 +28,5 @@ Route::group(['preflx'=>'student'],function(){
     ])->where(['subject'=>'(chinese|english|math)']);
 
 });
+
+Route::get('/','HomeController@index');
