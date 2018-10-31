@@ -28,4 +28,8 @@ Route::group(['preflx'=>'student'],function(){
 
 Route::get('/','HomeController@index');
 
-Route::get('cool','Cool\TestController@index');
+
+
+Route::group(['namespace'=>'Cool'],function(){
+    Route::get('cool','TestController@index');
+});
