@@ -11,6 +11,9 @@
 |
 */
 
+
+//ch05-06
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -33,3 +36,10 @@ Route::get('/','HomeController@index');
 Route::group(['namespace'=>'Cool'],function(){
     Route::get('cool','TestController@index');
 });
+
+
+
+
+//ch05-06-07
+
+Route::get('/board', 'BoardController@getIndex') ;

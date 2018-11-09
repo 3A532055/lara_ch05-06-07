@@ -11,7 +11,7 @@ class BoardController extends Controller
 {
     public function getIndex()
     {
-        return view('borad');
+        return view('board');
     }
 
 
