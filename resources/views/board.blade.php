@@ -28,6 +28,7 @@
 					<th>總分</th>
 					<th>動作</th>
 				</tr>
+
 				</thead>
 				<tbody>
 				<tr>
@@ -45,4 +46,4 @@
 				</tbody>
 			</table>
 		</div>
-@stop 
+@stop
