@@ -42,4 +42,4 @@ Route::group(['namespace'=>'Cool'],function(){
 
 //ch05-06-07
 
-Route::get('/board', 'BoardController@getIndex') ;
+Route::get('/board', ['as'=>'board','uses'=>'BoardController@getIndex']) ;
